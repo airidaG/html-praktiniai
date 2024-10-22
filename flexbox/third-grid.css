@@ -1,0 +1,58 @@
+.shelter, .shelter__animals-left{
+    display: flex;
+
+}
+.shelter{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.shelter__animals-left{
+    background-image: url('img/alone-3249953_640.jpg');
+    color: whitesmoke;
+    font-family: sans-serif;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+    background-size: cover;
+    background-position: right;
+   
+}
+
+.cat-lady{
+    height: 25rem;
+    width: 100%;
+    background-image: url('img/Screenshot\ 2024-10-17\ 133716.png');
+    background-size: cover;
+    margin-top: 1rem;
+}
+
+.shelter__animals--puppy{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.shelter__animals-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.shelter__animals--text{
+    width: 23rem;
+    align-self: center;
+    letter-spacing: 1px;
+
+}
+
+.shelter__head{
+    font-size: 3rem;
+    margin: 0;
+    align-self: center;
+    font-weight: 100;
+}

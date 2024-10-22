@@ -1,0 +1,52 @@
+
+.animals__selector--cats, .animals__selector--dogs, .animals__selector--birds, .animals__selector--rabbits{
+   width: 50%;
+    padding: 2.5rem;
+    text-align: center;
+    
+}
+
+.animals, .animals__selector{
+    display: flex;
+    background-color: #e5e5e5;
+ 
+    
+}
+.animals{
+    align-items: center;
+    justify-content: center;
+}
+
+.animals__selector--rabbits{
+   background-color: white;
+}
+
+.animals__selector{
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+
+figure{
+    margin: 0;
+}
+
+figcaption{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+.dalmatian{
+    padding-right: 0;
+}
+
+.icons{
+    width: 8rem;
+    height: 6rem;
+}
+
+.selector{
+    padding-left: 0;
+}
