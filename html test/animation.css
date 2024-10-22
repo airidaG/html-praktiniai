@@ -1,0 +1,39 @@
+:root{
+    --main-bg-color: #f8e9cb;
+    --main-text-color: #000080;
+}
+
+/* section{
+    padding: 50px;
+} */
+
+section{
+    padding: 20px;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+}
+
+a::before{
+    content: url(imgs/koo-icon.svg);
+    display: inline-block;
+    width: 40px;
+    padding-right: 10px;
+    transition: all 1s ease;
+}
+
+a::after{
+    content: url(imgs/koo-icon.svg);
+    display: inline-block;
+    width: 40px;
+    padding-left: 20px;
+    transition: all 1s ease;
+}
+
+a:hover::before{
+    transform: rotate(30deg);
+}
+
+a:hover::after{
+    transform: scale(1.5);
+    padding-left: 200px;
+}

@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+a:after{
+    content:" /";
+}
+
+a:first-child:before{
+    content: " » ";
+}
+
+a:last-child::after{
+    content: "";
+}
+
