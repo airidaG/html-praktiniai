@@ -4,6 +4,14 @@
     grid-template-rows: repeat(3, 10rem);
 
     gap: 1rem;
+
+    /* nereikia be grid area */
+
+    grid-template-areas: 
+    'green-left green-top green-top red-right'
+    'green-left orange-middle-left red-middle-right green-right'
+    'green-left red-bottom-left orange-bottom-right green-right'
+    ;
 }
 
 .green{
@@ -18,7 +26,7 @@
     background-color: rgb(218, 145, 11);
 }
 
-.green-left{
+/* .green-left{
     grid-row-start: 1;
     grid-row-end: 4;
 }
@@ -33,4 +41,33 @@
     grid-row-end: 4;
     grid-column-start: 4;
     grid-column-end: 5;
+} */
+
+.green-left{
+    grid-area: green-left;
 }
+
+.green-top{
+    grid-area: green-top;
+}
+
+.red-right{
+    grid-area: red-right;
+}
+.green-right{
+    grid-area: green-right;
+}
+.orange-middle-left{
+    grid-area: orange-middle-left;
+}
+.red-middle-right{
+    grid-area: red-middle-right;
+}
+
+.red-bottom-left{
+    grid-area: red-bottom-left;
+}
+.orange-bottom-right{
+    grid-area: orange-bottom-right;
+}
+
