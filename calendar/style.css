@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+   --active: #45539D;
+   --inactive: #F2F3F7;
+   --outline: #D5D4DF;
+   --nex-month-days: #A8A8A8;
+   --current-day-text: #ffffff;
+   --hover-color: #eaf0f5;
+
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.calendar-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 3.94rem);
+    grid-template-rows: repeat(6, 4rem);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-family: Inter, sans-serif;
+}
+
+
+.calendar-grid  p{
+    margin: 0;
+    padding: 1.25rem;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+
+  
+}
+
+.calendar{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    outline: 1px solid black;
+    border-radius: 1rem;
+
+}
+
+.banner{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 4rem 4rem;
+    font-family: Inter, sans-serif;
+
+}
+
+img{
+    align-self: center;
+}
+
+.month-year{
+    position: relative;
+    left: -5rem;
+}
+
+.week{
+    font-weight: 600;
+}
+
+.days{
+    outline: 1px solid var(--outline);
+}
+
+.active:hover{
+    background-color: var(--hover-color);
+}
+
+.inactive{
+    background-color: var(--inactive);
+    color: var(--nex-month-days);
+    
+}
+
+.current{
+    background-color: var(--active);
+    color: var(--current-day-text);
+}
+
+
+.arrow-right{
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
