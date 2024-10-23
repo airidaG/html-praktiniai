@@ -1,0 +1,36 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+
+    gap: 1rem;
+}
+
+.green{
+    background-color: rgb(24, 176, 24);
+}
+
+.red{
+    background-color: rgba(192, 17, 17, 0.848);
+}
+
+.orange{
+    background-color: rgb(218, 145, 11);
+}
+
+.green-left{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.green-top{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.green-right{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
