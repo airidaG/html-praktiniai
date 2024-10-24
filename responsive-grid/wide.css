@@ -1,0 +1,17 @@
+.all-cities{
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(18rem, 28rem));
+    grid-template-rows: repeat(3, 7.75rem);
+}
+
+.city-card{
+    display: grid;
+    grid-template-columns: 6.3rem 1fr;  
+}
+
+.everything{
+  grid-template-rows: 9.6rem 1fr;
+}
+
+
+  
